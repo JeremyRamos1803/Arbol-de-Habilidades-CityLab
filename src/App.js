@@ -20,10 +20,7 @@ function App() {
               <React.Fragment>
                 <SkillTree title="Motion" treeId="motion" data={motion} />
                 <SkillTree title="Harmony" treeId="harmony" data={harmony} />
-                <SkillTree
-                  title="Cataclysm"
-                  treeId="cataclysm"
-                  data={cataclysm}
+                <SkillTree title="Cataclysm" treeId="cataclysm" data={cataclysm}
                 />
               </React.Fragment>
             );
