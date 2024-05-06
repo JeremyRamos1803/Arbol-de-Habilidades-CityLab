@@ -1,0 +1,77 @@
+.App {
+  text-align: center;
+  height: 129vh;
+}
+
+.NavBar__list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 16px;
+}
+
+.NavBar__list li {
+  color: white;
+  padding: 0 4px;
+  list-style: none;
+  position: relative;
+  right: 0;
+}
+
+.NavBar__list li:after {
+  border-bottom: 1px solid white;
+  content: "";
+  display: block;
+  transition: width 0.3s ease-in;
+  width: 0;
+}
+
+.NavBar__list li:hover:after {
+  width: 100%;
+}
+
+.NavBar__list li a {
+  color: white;
+  text-decoration: none;
+  transition: border-bottom-width 0.6s;
+}
+
+.Image__container {
+  width: 300px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.Image {
+  width: 300px;
+}
+
+@media (min-width: 900px) {
+  .NavBar {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .NavBar__list {
+    justify-content: flex-end;
+  }
+
+  .NavBar__list li {
+    transition: all 0.3s ease-in;
+  }
+
+  .NavBar__list--hidden li {
+    right: -300px;
+  }
+
+  .Image__container {
+    height: 150px;
+    width: 500px;
+  }
+
+  .Image {
+    width: 500px;
+  }
+}
